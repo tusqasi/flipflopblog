@@ -1,2 +1,0 @@
-# flipflopblog
-Tusqasi's blog

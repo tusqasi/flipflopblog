@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>FlipFlopBlog</title>
+    <link href="https://tusqasi.github.io/flipflopblog/feed.xml" rel="self" />
+    <link href="https://tusqasi.github.io/flipflopblog" />
+    <updated>2023-04-06T13:16:30+05:30</updated>
+    <author>
+        <name>Tushar Kuntawar</name>
+    </author>
+    <id>https://tusqasi.github.io/flipflopblog</id>
+
+    <entry>
+        <title>Notes - Setting up elixir</title>
+        <author>
+            <name>Tushar Kuntawar</name>
+        </author>
+        <link href="https://tusqasi.github.io/flipflopblog/notes-setting-up-elixir.html"/>
+        <id>https://tusqasi.github.io/flipflopblog/notes-setting-up-elixir.html</id>
+        <media:content url="https://tusqasi.github.io/flipflopblog/media/posts/4/elixir-horizontal-white-bg-3.png" medium="image" />
+            <category term="guides"/>
+            <category term="elixir"/>
+
+        <updated>2023-04-06T13:16:30+05:30</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://tusqasi.github.io/flipflopblog/media/posts/4/elixir-horizontal-white-bg-3.png" alt="" />
+                    I’ll need an elixir installation, maybe multiple different version of elixir. For that asdf works great. Manage multiple versions of multiple languages. asdf Now install latest stable elixir, after installing the asdf elixir plugin. And set it to be the global one. asdf plugin add&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://tusqasi.github.io/flipflopblog/media/posts/4/elixir-horizontal-white-bg-3.png" class="type:primaryImage" alt="" /></p>
+                <p>I’ll need an elixir installation, maybe multiple different version of elixir. For that <code>asdf</code> works great.</p>
+<h3 id="asdf">asdf</h3>
+<p>Manage multiple versions of multiple languages.<br><a href="https://asdf-vm.com/">asdf</a></p>
+<p>Now install latest stable elixir, after installing the <code>asdf</code> elixir plugin. And set it to be the global one.</p>
+<pre><code>asdf plugin add elixir
+asdf install elixir  1.14.2-otp-25
+asdf global elixir  1.14.2-otp-25
+</code></pre>
+<hr>
+<p>Now that we have elixir installed, lets make a project.</p>
+<h3 id="mix">mix</h3>
+<p><a href="https://hexdocs.pm/mix/1.12/Mix.html">Mix</a> is a build tool that provides tasks for creating, compiling, and testing Elixir projects, managing its dependencies, and more.</p>
+<p>Lets make a elixir project. </p>
+<pre><code>mix new my_project
+cd my_project
+mix test
+</code></pre>
+<p>Add your dependencies in <code>mix.exs</code>, and run <code>mix deps.get</code>.</p>
+<p>You made new elixir mix project named <code>my_project</code>.</p>
+<h3 id="run-the-project">Run the project</h3>
+<p>There are multiple ways to run the project.</p>
+<ul>
+<li><code>iex -S mix</code>
+  Opens a <code>iex</code> shell with mix project in its context.</li>
+<li><code>mix run -e &quot;Module.function&quot;</code>
+  Run a specfic function from a module, like a main function.</li>
+<li>Set a main function and build to a beam executable.
+  <a href="https://whatdidilearn.info/2017/12/10/writing-command-line-app-in-elixir.html">toy-robot cli application</a></li>
+</ul>
+
+            ]]>
+        </content>
+    </entry>
+</feed>

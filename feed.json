@@ -1,0 +1,30 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "FlipFlopBlog",
+    "description": "",
+    "home_page_url": "https://tusqasi.github.io/flipflopblog",
+    "feed_url": "https://tusqasi.github.io/flipflopblog/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Tushar Kuntawar"
+    },
+    "items": [
+        {
+            "id": "https://tusqasi.github.io/flipflopblog/notes-setting-up-elixir.html",
+            "url": "https://tusqasi.github.io/flipflopblog/notes-setting-up-elixir.html",
+            "title": "Notes - Setting up elixir",
+            "summary": "I’ll need an elixir installation, maybe multiple different version of elixir. For that asdf works great. Manage multiple versions of multiple languages. asdf Now install latest stable elixir, after installing the asdf elixir plugin. And set it to be the global one. asdf plugin add&hellip;",
+            "content_html": "<p>I’ll need an elixir installation, maybe multiple different version of elixir. For that <code>asdf</code> works great.</p>\n<h3 id=\"asdf\">asdf</h3>\n<p>Manage multiple versions of multiple languages.<br><a href=\"https://asdf-vm.com/\">asdf</a></p>\n<p>Now install latest stable elixir, after installing the <code>asdf</code> elixir plugin. And set it to be the global one.</p>\n<pre><code>asdf plugin add elixir\nasdf install elixir  1.14.2-otp-25\nasdf global elixir  1.14.2-otp-25\n</code></pre>\n<hr>\n<p>Now that we have elixir installed, lets make a project.</p>\n<h3 id=\"mix\">mix</h3>\n<p><a href=\"https://hexdocs.pm/mix/1.12/Mix.html\">Mix</a> is a build tool that provides tasks for creating, compiling, and testing Elixir projects, managing its dependencies, and more.</p>\n<p>Lets make a elixir project. </p>\n<pre><code>mix new my_project\ncd my_project\nmix test\n</code></pre>\n<p>Add your dependencies in <code>mix.exs</code>, and run <code>mix deps.get</code>.</p>\n<p>You made new elixir mix project named <code>my_project</code>.</p>\n<h3 id=\"run-the-project\">Run the project</h3>\n<p>There are multiple ways to run the project.</p>\n<ul>\n<li><code>iex -S mix</code>\n  Opens a <code>iex</code> shell with mix project in its context.</li>\n<li><code>mix run -e &quot;Module.function&quot;</code>\n  Run a specfic function from a module, like a main function.</li>\n<li>Set a main function and build to a beam executable.\n  <a href=\"https://whatdidilearn.info/2017/12/10/writing-command-line-app-in-elixir.html\">toy-robot cli application</a></li>\n</ul>\n",
+            "image": "https://tusqasi.github.io/flipflopblog/media/posts/4/elixir-horizontal-white-bg-3.png",
+            "author": {
+                "name": "Tushar Kuntawar"
+            },
+            "tags": [
+                   "guides",
+                   "elixir"
+            ],
+            "date_published": "2023-04-06T12:06:04+05:30",
+            "date_modified": "2023-04-06T13:16:30+05:30"
+        }
+    ]
+}
